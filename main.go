@@ -3,5 +3,12 @@ package main // This line organises the application into a package
 import "fmt" // All functions in Go come from a package, in this case the Print function comes from the fmt package (fmt is a core Go formatting package)
 
 func main() { // This function tells the compiler where to start running the application's code. There can only be one of these 'main' functions.
-	fmt.Println("Hello world") // You must add the package name before a funtion to tell the app where that function comes from, in this case Print or Println (ln writes the text in a new line)
+	var conferenceName = "Go Conference" // This is an example of a variable
+	var remainingTickets = 50
+	const conferenceTickets = 50 // This is an example of a constant
+
+	fmt.Printf("Welcome to %v booking application\n", conferenceName) // You must add the package name before a funtion to tell the app where that function comes from.
+	fmt.Printf("We have a total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
+	fmt.Println("Get your tickets here to attend")
+
 }
