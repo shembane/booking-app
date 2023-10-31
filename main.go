@@ -7,6 +7,8 @@ func main() { // This function tells the compiler where to start running the app
 	var remainingTickets = 50
 	const conferenceTickets = 50 // This is an example of a constant
 
+	fmt.Printf("conferenceName is %T, remainingTickets is %T and conferenceTickets is %T\n", conferenceName, remainingTickets, conferenceTickets)
+
 	fmt.Printf("Welcome to %v booking application\n", conferenceName) // You must add the package name before a funtion to tell the app where that function comes from.
 	fmt.Printf("We have a total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets here to attend")
